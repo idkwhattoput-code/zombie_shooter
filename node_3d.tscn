@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bibaeu0j2q85u"]
+[gd_scene load_steps=11 format=3 uid="uid://bibaeu0j2q85u"]
 
 [ext_resource type="PackedScene" uid="uid://c6ikf3ywnwhbp" path="res://player.tscn" id="1_a202f"]
 [ext_resource type="PackedScene" uid="uid://dphfacuh2k8as" path="res://mob.tscn" id="2_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="4_jka67"]
 [ext_resource type="Script" uid="uid://pws8404awodu" path="res://mob_spawner.gd" id="4_r3fl7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_noarx"]
@@ -76,3 +77,9 @@ size = Vector3(152.147, 3.49426, 1)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 75.0273, 1.31317, -0.510056)
 use_collision = true
 size = Vector3(152.147, 3.49426, 1)
+
+[node name="Virtual joystick left" parent="." instance=ExtResource("4_jka67")]
+offset_left = -15.0
+offset_top = -275.0
+offset_right = 285.0
+offset_bottom = 25.0
