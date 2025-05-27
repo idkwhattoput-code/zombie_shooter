@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://c6ikf3ywnwhbp"]
+[gd_scene load_steps=7 format=3 uid="uid://c6ikf3ywnwhbp"]
 
 [ext_resource type="Script" uid="uid://c6sxye4xjclh0" path="res://character_body_3d.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cxhwfnvtx68p4" path="res://ChainSawGun_BaseColor.1001.webp" id="2_i3pqv"]
+[ext_resource type="ArrayMesh" uid="uid://brqchtq2cssqb" path="res://ChainSawGun.obj" id="2_onrkg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jka67"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i5arm"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_4flbx"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqtel"]
+albedo_texture = ExtResource("2_i3pqv")
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_4flbx")
@@ -21,8 +24,12 @@ shape = SubResource("CapsuleShape3D_i5arm")
 transform = Transform3D(1, 0, 0, 0, -0.173648, 0.984808, 0, -0.984808, -0.173648, 0, 7.8333, 0)
 
 [node name="GunMount" type="Node3D" parent="."]
-transform = Transform3D(0.0205573, 0, -0.545292, 0, 0.54568, 0, 0.545292, 0, 0.0205573, 0.0163517, 0, 0.66171)
+transform = Transform3D(-2.22924e-08, 0, 1.66568, 0, 1.34068, 0, -0.509991, 0, -7.2809e-08, 0.0163517, 0, 1.32882)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="GunMount"]
-transform = Transform3D(1.38681, 0, 0, 0, 0.454702, 0, 0, 0, 0.355965, 0.748519, 0, 0)
-mesh = SubResource("BoxMesh_4flbx")
+transform = Transform3D(-2.73243, 0, -8.19481e-08, 0, 0.968798, 0, 2.38877e-07, 0, -0.937377, 1.82439, 0.339272, 0.0204693)
+material_override = SubResource("StandardMaterial3D_hqtel")
+mesh = ExtResource("2_onrkg")
+
+[node name="Node3D" type="Node3D" parent="GunMount"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -2.66454e-15, 0, 1, 3.39056, 0.357445, 1.14553e-07)
