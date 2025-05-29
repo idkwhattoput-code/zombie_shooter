@@ -1,0 +1,15 @@
+this is not needed anymore so this is where we can add info and what to do about the game. 
+
+
+1. player movement
+2. basic map 
+3. we have player sprites but they are on my other conputer will update at the end of the day
+
+ToDo
+
+1. start menu
+2. credits
+3. sound and bg music
+4. animation tree 
+5. mobile shoot controls
+6. shoot from the end of the gun and shoot in the coret dir
