@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const SPEED = 5.5
+const JUMP_VELOCITY = 0.01 #this should not matter. because there is no jumping
 const GUN_SMOOTH_SPEED = 4
 const GUN_DISTANCE = 0.5
 const BULLET_SPEED = 50.0
